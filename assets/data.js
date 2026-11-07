@@ -1,5 +1,5 @@
 window.REPORT_DATA = {
-  "asOf": "2026-11-06",
+  "asOf": "2026-11-07",
   "products": [
     {
       "id": "p0076",
@@ -3699,7 +3699,7 @@ window.REPORT_DATA = {
       "regCode": "Z7001926001092",
       "shareCode": "2601NC023A",
       "inception": "2026-08-27",
-      "latestDate": "2026-11-04",
+      "latestDate": "2026-11-05",
       "officialAnnual": null,
       "officialAsOf": null,
       "dates": [
@@ -3748,7 +3748,8 @@ window.REPORT_DATA = {
         "2026-10-30",
         "2026-11-02",
         "2026-11-03",
-        "2026-11-04"
+        "2026-11-04",
+        "2026-11-05"
       ],
       "nav": [
         1.0,
@@ -3796,7 +3797,8 @@ window.REPORT_DATA = {
         1.008,
         1.0082,
         1.0082,
-        1.0082
+        1.0082,
+        1.0083
       ],
       "per10k": [
         null,
@@ -3844,7 +3846,8 @@ window.REPORT_DATA = {
         -3.0,
         2.0,
         0.0,
-        0.0
+        0.0,
+        1.0
       ]
     },
     {
@@ -5124,7 +5127,7 @@ window.REPORT_DATA = {
       "regCode": "Z7001926001090",
       "shareCode": "2601NB045A",
       "inception": "2026-08-26",
-      "latestDate": "2026-11-04",
+      "latestDate": "2026-11-05",
       "officialAnnual": null,
       "officialAsOf": null,
       "dates": [
@@ -5174,7 +5177,8 @@ window.REPORT_DATA = {
         "2026-10-30",
         "2026-11-02",
         "2026-11-03",
-        "2026-11-04"
+        "2026-11-04",
+        "2026-11-05"
       ],
       "nav": [
         1.0,
@@ -5223,7 +5227,8 @@ window.REPORT_DATA = {
         1.0018,
         1.0043,
         1.0045,
-        1.0047
+        1.0047,
+        1.0048
       ],
       "per10k": [
         null,
@@ -5272,7 +5277,8 @@ window.REPORT_DATA = {
         -32.0,
         25.0,
         2.0,
-        2.0
+        2.0,
+        1.0
       ]
     }
   ]
