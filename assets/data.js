@@ -1,5 +1,5 @@
 window.REPORT_DATA = {
-  "asOf": "2026-11-07",
+  "asOf": "2026-11-08",
   "products": [
     {
       "id": "p0076",
