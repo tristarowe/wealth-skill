@@ -1,5 +1,5 @@
 window.REPORT_DATA = {
-  "asOf": "2026-11-10",
+  "asOf": "2026-11-11",
   "products": [
     {
       "id": "p0076",
@@ -9,7 +9,7 @@ window.REPORT_DATA = {
       "regCode": "Z7005125000076",
       "shareCode": "",
       "inception": "2025-10-28",
-      "latestDate": "2026-11-06",
+      "latestDate": "2026-11-09",
       "officialAnnual": null,
       "officialAsOf": null,
       "dates": [
@@ -262,7 +262,8 @@ window.REPORT_DATA = {
         "2026-11-03",
         "2026-11-04",
         "2026-11-05",
-        "2026-11-06"
+        "2026-11-06",
+        "2026-11-09"
       ],
       "nav": [
         1.000007,
@@ -514,7 +515,8 @@ window.REPORT_DATA = {
         1.02264,
         1.022806,
         1.022888,
-        1.022979
+        1.022979,
+        1.023091
       ],
       "per10k": [
         null,
@@ -766,7 +768,8 @@ window.REPORT_DATA = {
         1.22,
         1.66,
         0.82,
-        0.91
+        0.91,
+        1.12
       ]
     },
     {
@@ -777,7 +780,7 @@ window.REPORT_DATA = {
       "regCode": "Z7000926002150",
       "shareCode": "5811226799",
       "inception": "2026-10-29",
-      "latestDate": "2026-11-06",
+      "latestDate": "2026-11-09",
       "officialAnnual": null,
       "officialAsOf": null,
       "dates": [
@@ -787,7 +790,8 @@ window.REPORT_DATA = {
         "2026-11-03",
         "2026-11-04",
         "2026-11-05",
-        "2026-11-06"
+        "2026-11-06",
+        "2026-11-09"
       ],
       "nav": [
         1.0,
@@ -796,7 +800,8 @@ window.REPORT_DATA = {
         1.0001,
         1.0002,
         1.0002,
-        1.0002
+        1.0002,
+        1.0003
       ],
       "per10k": [
         null,
@@ -805,7 +810,8 @@ window.REPORT_DATA = {
         0.0,
         1.0,
         0.0,
-        0.0
+        0.0,
+        1.0
       ]
     },
     {
@@ -816,7 +822,7 @@ window.REPORT_DATA = {
       "regCode": "Z7000722001276",
       "shareCode": "",
       "inception": "2024-06-18",
-      "latestDate": "2026-11-08",
+      "latestDate": "2026-11-09",
       "officialAnnual": null,
       "officialAsOf": null,
       "dates": [
@@ -1693,7 +1699,8 @@ window.REPORT_DATA = {
         "2026-11-05",
         "2026-11-06",
         "2026-11-07",
-        "2026-11-08"
+        "2026-11-08",
+        "2026-11-09"
       ],
       "nav": [
         1.000069,
@@ -2569,7 +2576,8 @@ window.REPORT_DATA = {
         1.064765,
         1.065497,
         1.065543,
-        1.065588
+        1.065588,
+        1.065724
       ],
       "per10k": [
         null,
@@ -3445,7 +3453,8 @@ window.REPORT_DATA = {
         0.25,
         7.32,
         0.46,
-        0.45
+        0.45,
+        1.36
       ]
     },
     {
@@ -3456,7 +3465,7 @@ window.REPORT_DATA = {
       "regCode": "Z7000726001312",
       "shareCode": "",
       "inception": "2026-08-18",
-      "latestDate": "2026-11-08",
+      "latestDate": "2026-11-09",
       "officialAnnual": null,
       "officialAsOf": null,
       "dates": [
@@ -3542,7 +3551,8 @@ window.REPORT_DATA = {
         "2026-11-05",
         "2026-11-06",
         "2026-11-07",
-        "2026-11-08"
+        "2026-11-08",
+        "2026-11-09"
       ],
       "nav": [
         1.000074,
@@ -3627,7 +3637,8 @@ window.REPORT_DATA = {
         1.005044,
         1.005123,
         1.005157,
-        1.005192
+        1.005192,
+        1.00522
       ],
       "per10k": [
         null,
@@ -3712,7 +3723,8 @@ window.REPORT_DATA = {
         0.51,
         0.79,
         0.34,
-        0.35
+        0.35,
+        0.28
       ]
     },
     {
@@ -3723,7 +3735,7 @@ window.REPORT_DATA = {
       "regCode": "Z7001926001092",
       "shareCode": "2601NC023A",
       "inception": "2026-08-27",
-      "latestDate": "2026-11-06",
+      "latestDate": "2026-11-09",
       "officialAnnual": null,
       "officialAsOf": null,
       "dates": [
@@ -3774,7 +3786,8 @@ window.REPORT_DATA = {
         "2026-11-03",
         "2026-11-04",
         "2026-11-05",
-        "2026-11-06"
+        "2026-11-06",
+        "2026-11-09"
       ],
       "nav": [
         1.0,
@@ -3824,7 +3837,8 @@ window.REPORT_DATA = {
         1.0082,
         1.0082,
         1.0083,
-        1.0083
+        1.0083,
+        1.0084
       ],
       "per10k": [
         null,
@@ -3874,7 +3888,8 @@ window.REPORT_DATA = {
         0.0,
         0.0,
         1.0,
-        0.0
+        0.0,
+        1.0
       ]
     },
     {
@@ -3885,7 +3900,7 @@ window.REPORT_DATA = {
       "regCode": "Z7001426002675",
       "shareCode": "EW9647D",
       "inception": "2026-10-20",
-      "latestDate": "2026-11-06",
+      "latestDate": "2026-11-09",
       "officialAnnual": null,
       "officialAsOf": null,
       "dates": [
@@ -3902,7 +3917,8 @@ window.REPORT_DATA = {
         "2026-11-03",
         "2026-11-04",
         "2026-11-05",
-        "2026-11-06"
+        "2026-11-06",
+        "2026-11-09"
       ],
       "nav": [
         1.0,
@@ -3918,7 +3934,8 @@ window.REPORT_DATA = {
         1.0024,
         1.0026,
         1.0028,
-        1.0029
+        1.0029,
+        1.003
       ],
       "per10k": [
         null,
@@ -3934,6 +3951,7 @@ window.REPORT_DATA = {
         0.0,
         2.0,
         2.0,
+        1.0,
         1.0
       ]
     },
@@ -3945,7 +3963,7 @@ window.REPORT_DATA = {
       "regCode": "Z7001026001324",
       "shareCode": "CYQWF7D27A",
       "inception": "2026-08-18",
-      "latestDate": "2026-11-05",
+      "latestDate": "2026-11-06",
       "officialAnnual": null,
       "officialAsOf": null,
       "dates": [
@@ -4000,7 +4018,8 @@ window.REPORT_DATA = {
         "2026-11-02",
         "2026-11-03",
         "2026-11-04",
-        "2026-11-05"
+        "2026-11-05",
+        "2026-11-06"
       ],
       "nav": [
         1.00003,
@@ -4054,7 +4073,8 @@ window.REPORT_DATA = {
         1.00504,
         1.00544,
         1.005601,
-        1.006257
+        1.006257,
+        1.006534
       ],
       "per10k": [
         null,
@@ -4108,7 +4128,8 @@ window.REPORT_DATA = {
         -2.16,
         4.0,
         1.61,
-        6.56
+        6.56,
+        2.77
       ]
     },
     {
@@ -4119,7 +4140,7 @@ window.REPORT_DATA = {
       "regCode": "Z7001026001505",
       "shareCode": "CYQWF14D25A",
       "inception": "2026-09-09",
-      "latestDate": "2026-11-05",
+      "latestDate": "2026-11-06",
       "officialAnnual": null,
       "officialAsOf": null,
       "dates": [
@@ -4158,7 +4179,8 @@ window.REPORT_DATA = {
         "2026-11-02",
         "2026-11-03",
         "2026-11-04",
-        "2026-11-05"
+        "2026-11-05",
+        "2026-11-06"
       ],
       "nav": [
         1.00003,
@@ -4196,7 +4218,8 @@ window.REPORT_DATA = {
         1.003398,
         1.003502,
         1.003601,
-        1.003674
+        1.003674,
+        1.003723
       ],
       "per10k": [
         null,
@@ -4234,7 +4257,8 @@ window.REPORT_DATA = {
         -0.53,
         1.04,
         0.99,
-        0.73
+        0.73,
+        0.49
       ]
     },
     {
@@ -4245,7 +4269,7 @@ window.REPORT_DATA = {
       "regCode": "Z7000726000157",
       "shareCode": "",
       "inception": "2026-03-05",
-      "latestDate": "2026-11-08",
+      "latestDate": "2026-11-09",
       "officialAnnual": null,
       "officialAsOf": null,
       "dates": [
@@ -4497,7 +4521,8 @@ window.REPORT_DATA = {
         "2026-11-05",
         "2026-11-06",
         "2026-11-07",
-        "2026-11-08"
+        "2026-11-08",
+        "2026-11-09"
       ],
       "nav": [
         1.000025,
@@ -4748,7 +4773,8 @@ window.REPORT_DATA = {
         1.021939,
         1.022201,
         1.022248,
-        1.022295
+        1.022295,
+        1.022321
       ],
       "per10k": [
         null,
@@ -4999,7 +5025,8 @@ window.REPORT_DATA = {
         1.24,
         2.62,
         0.47,
-        0.47
+        0.47,
+        0.26
       ]
     },
     {
@@ -5010,7 +5037,7 @@ window.REPORT_DATA = {
       "regCode": "Z7002626002218",
       "shareCode": "AF266423B",
       "inception": "2026-08-26",
-      "latestDate": "2026-11-06",
+      "latestDate": "2026-11-09",
       "officialAnnual": null,
       "officialAsOf": null,
       "dates": [
@@ -5062,7 +5089,8 @@ window.REPORT_DATA = {
         "2026-11-03",
         "2026-11-04",
         "2026-11-05",
-        "2026-11-06"
+        "2026-11-06",
+        "2026-11-09"
       ],
       "nav": [
         1.0001,
@@ -5113,7 +5141,8 @@ window.REPORT_DATA = {
         1.0067,
         1.0067,
         1.0068,
-        1.0068
+        1.0068,
+        1.007
       ],
       "per10k": [
         null,
@@ -5164,7 +5193,8 @@ window.REPORT_DATA = {
         1.0,
         0.0,
         1.0,
-        0.0
+        0.0,
+        2.0
       ]
     },
     {
@@ -5175,7 +5205,7 @@ window.REPORT_DATA = {
       "regCode": "Z7001926001090",
       "shareCode": "2601NB045A",
       "inception": "2026-08-26",
-      "latestDate": "2026-11-06",
+      "latestDate": "2026-11-09",
       "officialAnnual": null,
       "officialAsOf": null,
       "dates": [
@@ -5227,7 +5257,8 @@ window.REPORT_DATA = {
         "2026-11-03",
         "2026-11-04",
         "2026-11-05",
-        "2026-11-06"
+        "2026-11-06",
+        "2026-11-09"
       ],
       "nav": [
         1.0,
@@ -5278,7 +5309,8 @@ window.REPORT_DATA = {
         1.0045,
         1.0047,
         1.0048,
-        1.0049
+        1.0049,
+        1.005
       ],
       "per10k": [
         null,
@@ -5328,6 +5360,7 @@ window.REPORT_DATA = {
         25.0,
         2.0,
         2.0,
+        1.0,
         1.0,
         1.0
       ]
