@@ -136,6 +136,14 @@
       map[k] = o;
     });
     var list = order.map(function (k) { return map[k]; });
+    /* 与增量口径一致：只展示成立日（或募集结束日）在今天及以后的新品 */
+    var now = new Date();
+    var today = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0') + '-' +
+      String(now.getDate()).padStart(2, '0');
+    list = list.filter(function (p) {
+      var e = p.establish || p.raiseEnd;
+      return !e || e >= today;
+    });
 
     var starts = [];
     var ends = [];
