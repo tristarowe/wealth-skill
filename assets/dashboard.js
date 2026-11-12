@@ -1421,6 +1421,26 @@
       .trim();
   }
 
+  /* 搜索排序：产品名称优先，登记编码最后
+   * 0 = 名称前缀命中；1 = 名称包含；2 = 仅登记编码命中 */
+  function searchRank(p, kw) {
+    var short = String(p.short || '').toLowerCase();
+    var full = String(p.name || '').toLowerCase();
+    if (short.indexOf(kw) === 0 || full.indexOf(kw) === 0) return 0;
+    if (short.indexOf(kw) !== -1 || full.indexOf(kw) !== -1) return 1;
+    return 2;
+  }
+  function sortBySearch(list, q, getP) {
+    var kw = (q || '').trim().toLowerCase();
+    if (!kw) return list;
+    var get = getP || function (x) { return x; };
+    return list.map(function (x, i) {
+      return { x: x, i: i, r: searchRank(get(x) || {}, kw) };
+    }).sort(function (a, b) {
+      return a.r - b.r || a.i - b.i;
+    }).map(function (o) { return o.x; });
+  }
+
   function renderProductTable() {
     var tbody = document.getElementById('prod-body');
     if (!tbody) return;
@@ -1452,6 +1472,8 @@
         (p.regCode || '').toLowerCase().indexOf(q) === -1) return false;
       return true;
     });
+    /* 搜索时按「名称命中优先、编号命中最后」重排，其余情况保持原顺序 */
+    list = sortBySearch(list, prodUi.q, function (it) { return it.product; });
 
     var hit = list.length;
     var pages = Math.max(1, Math.ceil(hit / PROD_PAGE_SIZE));
@@ -1765,11 +1787,11 @@
       return;
     }
     list.hidden = false;
-    var items = tradeProducts().filter(function (p) {
+    var items = sortBySearch(tradeProducts().filter(function (p) {
       return (p.short || '').toLowerCase().indexOf(kw) !== -1 ||
         (p.name || '').toLowerCase().indexOf(kw) !== -1 ||
         (p.regCode || '').toLowerCase().indexOf(kw) !== -1;
-    }).slice(0, 6);
+    }), kw).slice(0, 6);
     var hid = document.getElementById('trade-prod');
     var cur = hid ? hid.value : '';
     list.innerHTML = items.map(function (p) {
@@ -1889,23 +1911,15 @@
       confirmDate: dateEl.value,
       saleChannel: chEl ? chEl.value : ''
     };
-    var url = '/api/trade';
-    if (editId) {
-      url = '/api/trade/update';
-      body.id = editId;
-    }
-    fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(body)
-    }).then(function (r) { return r.json(); }).then(function (res) {
+    var req = editId ? window.STORE.update(editId, body) : window.STORE.add(body);
+    req.then(function (res) {
       if (btn) btn.disabled = false;
       if (!res || !res.ok) { toast((res && res.message) || '提交失败'); return; }
       toast(editId ? '交易已修改，刷新持仓' : ('已录入 ' + typeEl.value + '，刷新持仓'));
       setTimeout(function () { location.reload(); }, 700);
-    }).catch(function () {
+    }).catch(function (e) {
       if (btn) btn.disabled = false;
-      toast('本地服务未启动，无法写入交易底稿');
+      toast((e && e.message) || '写入交易失败，请检查网络后重试');
     });
   }
 
@@ -2259,15 +2273,11 @@
       if (del) {
         var did = del.getAttribute('data-del');
         if (!window.confirm('确认删除该笔交易？删除后持仓与收益将重新计算。')) return;
-        fetch('/api/trade/delete', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ id: did })
-        }).then(function (r) { return r.json(); }).then(function (res) {
+        window.STORE.remove(did).then(function (res) {
           if (!res || !res.ok) { toast((res && res.message) || '删除失败'); return; }
           toast('交易已删除，刷新持仓');
           setTimeout(function () { location.reload(); }, 700);
-        }).catch(function () { toast('本地服务未启动，无法删除交易'); });
+        }).catch(function (e) { toast((e && e.message) || '删除交易失败，请检查网络后重试'); });
       }
     });
 
@@ -2316,7 +2326,7 @@
   function renderPickerList() {
     var list = document.getElementById('ms-list');
     if (!list) return;
-    var items = DATA.products.filter(pickerMatches);
+    var items = sortBySearch(DATA.products.filter(pickerMatches), pickerQuery);
     if (!items.length) {
       list.innerHTML = '<div class="ms-empty">未找到匹配产品</div>';
       return;
